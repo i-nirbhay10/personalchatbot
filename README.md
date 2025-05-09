@@ -3,7 +3,7 @@
 An interactive chatbot powered by **Google's Gemini Generative Language API**.  
 Ask anything — from general knowledge to code-related problems — and get intelligent, human-like responses in real-time.
 
----
+## 🌐 **Live Demo**: [Chatbot](https://personalchatbot-peach.vercel.app/)
 
 ## 👨‍💻 Developed by: Nirbhay Verma – Full Stack Developer
 
