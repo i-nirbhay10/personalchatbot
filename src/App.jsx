@@ -83,8 +83,8 @@ function App() {
     <div className="fixed inset-0 bg-[#323232]">
       <div className="flex text-lg md:text-2xl absolute items-center">
         <Switch checked={checked} onChange={handleChange} color="warning" />
-        <h1 className=" font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-200  to-blue-500 transition-colors">
-          Switch To Smart AI Mode
+        <h1 className="text-lg md:text-2xlx font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-200  to-blue-500 transition-colors">
+          {checked ? "Switch To Assistant Mode" : "Switch To Smart AI Mode"}
         </h1>
       </div>
       <div className="h-full max-w-4xl  mx-auto flex flex-col p-3">
@@ -113,7 +113,7 @@ function App() {
               {checked ? (
                 <div className="h-full flex flex-col items-center justify-center text-center p-6">
                   <div className="rounded-xl md:p-8 max-w-2xl py-6">
-                    <h2 className="text-xl md:text-2xl font-bold text-[#8E7F85]   mb-4">
+                    <h2 className="text-xl md:text-2xl font-bold text-[#8E7F85] mb-4">
                       Welcome to ChatBot AI! 👋
                     </h2>
                     <p className="text-white mb-4">
