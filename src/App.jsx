@@ -81,9 +81,9 @@ function App() {
 
   return (
     <div className="fixed inset-0 bg-[#323232]">
-      <div className="flex absolute items-center">
+      <div className="flex text-lg md:text-2xl absolute items-center">
         <Switch checked={checked} onChange={handleChange} color="warning" />
-        <h1 className="flex text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-200  to-blue-500 transition-colors">
+        <h1 className=" font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-200  to-blue-500 transition-colors">
           Switch To Smart AI Mode
         </h1>
       </div>
@@ -97,7 +97,7 @@ function App() {
             rel="noopener noreferrer"
             className="block"
           >
-            <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-red-600 hover:from-red-600 hover:to-purple-700 transition-colors">
+            <h1 className="text-lg md:text-2xl pt-5 font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-red-600 hover:from-red-600 hover:to-purple-700 transition-colors">
               Welcome to Nirbhay's Portfolio Chatbot! 👋
             </h1>
           </a>
@@ -111,9 +111,9 @@ function App() {
           {chatHistory.length === 0 ? (
             <>
               {checked ? (
-                <div className="h-full transition delay-150 duration-300 flex flex-col items-center justify-center text-center p-6">
-                  <div className="rounded-xl p-8 max-w-2xl">
-                    <h2 className="text-2xl font-bold text-[#8E7F85] mb-4">
+                <div className="h-full flex flex-col items-center justify-center text-center p-6">
+                  <div className="rounded-xl md:p-8 max-w-2xl">
+                    <h2 className="text-xl md:text-2xl font-bold text-[#8E7F85]   mb-4">
                       Welcome to ChatBot AI! 👋
                     </h2>
                     <p className="text-white mb-4">
@@ -180,8 +180,8 @@ function App() {
                 </div>
               ) : (
                 <div className="h-full flex flex-col items-center justify-center text-center p-6">
-                  <div className="rounded-xl p-8 max-w-2xl">
-                    <h2 className="text-2xl font-bold text-[#8E7F85]   mb-4">
+                  <div className="rounded-xl md:p-8 max-w-2xl">
+                    <h2 className="text-xl md:text-2xl font-bold text-[#8E7F85]   mb-4">
                       Welcome to Nirbhay's Portfolio Chatbot! 👋
                     </h2>
                     <p className="text-white mb-4">
@@ -213,7 +213,7 @@ function App() {
                       Just type your question below and press Enter or click
                       Send to start chatting!
                     </p>
-                    {/* Social Icons */}
+
                     {/* Social Icons */}
                     <div className="mt-8 flex justify-center gap-6 text-white">
                       <a
@@ -287,10 +287,11 @@ function App() {
           onSubmit={generateAnswer}
           className="bg-white bg-gradient-to-r from-[#17171A]  to-[#1F2123] rounded-lg shadow-lg p-4"
         >
-          <div className="flex h-auto gap-2">
+          <div className="flex md:flex-1 sm:w-auto border border-gray-300 rounded p-2  focus:border-blue-400 focus:ring-1 focus:ring-blue-400 resize-none h-auto gap-2">
             <input
               required
-              className="flex-1 border border-gray-300 rounded p-3 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 resize-none"
+              className="flex-1 pl-3 bg-transparent text-gray-300 focus:outline-none focus:ring-0 focus:border-transparent"
+              // className="flex-1 pl-3 bg-transparent "
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
               placeholder={
